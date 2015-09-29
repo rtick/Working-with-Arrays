@@ -1,6 +1,27 @@
 <h1>State List</h1>
 
-<p>here is a list of states...</p>
+<p>Initial:</p>
 
 <!-- iterate through each state in the array and put them into list items individually -->
 
+<% @states.each do | state | %>
+  <li><%= state %></li>
+<% end %>
+
+
+<p>Sorted (Not Permanent):</p>
+<% @states.sort.each do | state | %>
+  <li><%= state %></li>
+<% end %>
+
+
+<p>Proof:</p>
+<% @states.each do | state | %>
+  <li><%= state %></li>
+<% end %>
+
+<% @states.sort! %>
+<p>Sorted (Permanent):</p>
+<% @states.each do | state | %>
+  <li><%= state %></li>
+<% end %>
