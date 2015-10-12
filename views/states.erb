@@ -20,6 +20,7 @@
   <li><%= state %></li>
 <% end %>
 
+<!-- I see what you are doing here. It will become more important later but keep the non-view related coding out of the view (like .sort) -->
 <% @states.sort! %>
 <p>Sorted (Permanent):</p>
 <% @states.each do | state | %>
